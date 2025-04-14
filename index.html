@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pattern Preview UI</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Left Arrow -->
+      <div class="pattern-selector">
+        <img src="./p1.jpg" class="pattern-thumb" data-pattern="./p1.jpg" />
+        <img src="./p2.jpg" class="pattern-thumb" data-pattern="./p2.jpg" />
+        <img src="./p3.jpg" class="pattern-thumb" data-pattern="./p3.jpg" />
+      </div>
+      <button class="nav-arrow left" id="prevBtn">&#10094;</button>
+
+      <!-- Mockup Viewer -->
+      <div class="mockup-wrapper">
+        <div class="mockup-box">
+          <div class="pattern-layer" id="patternLayer"></div>
+          <img
+            id="mainMockup"
+            class="mockup-image"
+            src="./assets/mockup1.png"
+            alt="Mockup"
+          />
+        </div>
+      </div>
+
+      <!-- Right Arrow -->
+      <button class="nav-arrow right" id="nextBtn">&#10095;</button>
+
+      <!-- Vertical Slider -->
+      <input
+        type="range"
+        class="vertical-slider"
+        id="scaleSlider"
+        min="1"
+        max="3"
+        step="0.01"
+        value="1"
+      />
+
+      <!-- Thumbnails -->
+      <div class="thumbnail-bar" id="thumbnailBar">
+        <!-- Example thumbnails (update src) -->
+        <img
+          class="thumb active"
+          src="https://production-cdn1.patternbank.com/uploads/masks/size_600/swimwear_swimsuit.png?1680703590"
+          data-index="0"
+        />
+        <img
+          class="thumb"
+          src="https://production-cdn.patternbank.com/uploads/masks/size_600/giftware_tote_bag.png?1680703614"
+          data-index="1"
+        />
+        <img
+          class="thumb"
+          src="https://production-cdn1.patternbank.com/uploads/masks/size_600/interiors_small_curtain.png?1680703593"
+          data-index="2"
+        />
+        <img
+          class="thumb"
+          src="https://production-cdn.patternbank.com/uploads/masks/size_600/menswear_bomber_jacket.png?1680703623"
+          data-index="3"
+        />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
